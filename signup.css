@@ -1,0 +1,212 @@
+/* ตั้งค่าพื้นหลัง */
+body {
+    background-color: #00765a;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ชื่อcompany*/
+.company {
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+/* ทำให้ form อยู่ตรงกลาง */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+}
+
+/* กล่องsign up */
+@media screen and (min-width: 1024px){
+    .signup {
+        padding: 20px;
+        background-color: #07b98e;
+        border-radius: 15px;
+        width: 30vw;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .signup {
+        padding: 20px;
+        background-color: #07b98e;
+        border-radius: 15px;
+        width: 30vw;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .signup {
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background-color: #07b98e;
+        border-radius: 15px;
+        width: 100vw;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* หัวข้อ "Sign in" */
+#header {
+    color: white;
+    font-size: 2em;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+/* ช่องกรอกข้อมูล */
+input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96%;
+    height: 35px;
+    padding: 5px 0;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 87, 7);
+    margin-top: 12px;
+    background-color: #32bd9c;
+    transition: background 0.3s ease;
+}
+
+select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 99%;
+    height: 45px;
+    padding: 5px 0;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 87, 7);
+    margin-top: 12px;
+    background-color: #32bd9c;
+    transition: background 0.3s ease;
+}
+
+
+input, textarea {
+    padding-left: 10px;
+}
+
+.form:hover {
+    background: #35d1af;
+}
+
+.form:not(:placeholder-shown) {
+    color: rgb(0, 87, 7);
+}
+
+option {
+    color: rgb(0, 87, 7);;
+}
+
+.age_form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#age {
+    flex: 1;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 87, 7);
+    background-color: #32bd9c;
+    transition: background 0.3s ease;
+    margin-right: 8px;
+    text-align: left;
+}
+
+#date {
+    flex: 1;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 87, 7);
+    background-color: #32bd9c;
+    transition: background 0.3s ease;
+    text-align: left;
+}
+
+/* ปุ่ม Sign up */
+#signup {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 100px;
+    background-color: #048c6b;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#signup:hover {
+    background-color: #036a54;
+}
+
+
+/* วงกลมพื้นหลัง */
+.circle {
+    position: absolute;
+    max-width: 1000px;
+    max-height: 1000px;
+    width: 80vw;
+    height: 80vw;
+    border-radius: 50%;
+    background: rgba(4, 140, 107, 0.7);
+    z-index: 1;
+}
+
+/* ตำแหน่งของวงกลม */
+.circle.one {
+    top: -50%;
+    right: -50px;
+}
+
+.circle.two {
+    bottom: -50%;
+    left: -50px;
+}
+
+.dot {
+    position: absolute;
+    width: 60px;
+    height: 34px;
+}
+
+.dot.one {
+    top: 140px;
+    left: 50px;
+}
+
+.dot.two {
+    bottom: 80px;
+    right: 50px;
+}
